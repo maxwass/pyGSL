@@ -1,0 +1,17 @@
+program: hard_thresholding.py
+method: bayes
+metric:
+  goal: minimize
+  name: "val/error"
+parameters:
+  threshold:
+    distribution: uniform
+    min: 0
+    max: 10
+  # dataset
+  num_samples_val:
+    value: 500
+  num_samples_test:
+    value: 500
+  seed:
+    value: 50

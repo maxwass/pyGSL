@@ -1,0 +1,28 @@
+program: spectral_templates.py
+method: grid
+parameters:
+  graph_gen:
+    values: ['geom', 'ER', 'pref_attach','SC']
+  coeffs_index:
+    values: [0,1,2] 
+  eps: # did wider search with smaller dataset...these values are ~optimal
+    values: [1e-6, 1e-3, 1e-1]
+  allowable_failure_rate: # how many can fail to converge per batch before we call it a failed batch?
+    value: .05
+  num_vertices:
+    value: 68
+  fc_norm:
+    value: None
+  sum_stat:
+    value: "sample_cov"
+  num_signals:
+    value: 50
+  num_samples_train:
+    value: 0
+  num_samples_val:
+    value: 100
+  num_samples_test:
+    value: 101
+  rand_seed:
+    value: 50
+

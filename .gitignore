@@ -1,0 +1,12 @@
+.idea/
+__pycache__/
+lightning_logs/
+wandb/
+checkpoints/
+plots/
+created_data/*
+.DS_Store
+*.mat
+*.m~
+*.npz
+*.pkl

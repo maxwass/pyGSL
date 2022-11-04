@@ -1,0 +1,34 @@
+# In addition to this enter this by hand. Changes for linux, see: https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html 
+# > pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.12.0+cpu.html
+
+name: gsl
+channels:
+  - pytorch-nightly
+  - conda-forge
+dependencies: # original list
+  - python=3.9
+  - pip>=19.0
+  - pytorch
+  - torchvision
+  - jupyter
+  - scikit-learn # for glasso
+  - scipy>=1.7.1
+  - pandas
+  - pandas-datareader
+  - matplotlib
+  - pillow
+  - tqdm
+  - requests
+  - h5py
+  - pyyaml
+  - flask
+  - boto3
+  - ipykernel
+  - numpy
+  - pytorch-lightning
+  - torchmetrics #- pyg #pytorch geometric
+  - pip:
+    - wandb
+    - multiprocess
+    - networkx==2.6.3
+    - plotly
